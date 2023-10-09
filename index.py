@@ -66,11 +66,20 @@ while b!=0:
         max2=b
 print(max2)
 #7
-while i < n:
-	f1, f2 = f2, f1 + f2 
-	print(f2, end=' ') 
-	i += 1
-print()
+fib1 = 1
+fib2 = 1
+
+n = input("Номер элемента ряда Фибоначчи: ")
+n = int(n)
+
+i = 0
+while i < n - 2:
+    fib_sum = fib1 + fib2
+    fib1 = fib2
+    fib2 = fib_sum
+    i = i + 1
+
+print("Значение этого элемента:", fib2)
 #8
 p=int(input())
 c=1
